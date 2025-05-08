@@ -2,3 +2,9 @@ converted-1746429731075.csv
 __pycache__
 env
 test_extraction.py
+
+
+csvdataextraction 
+8567
+
+gunicorn app:app --bind 0.0.0.0:8567 --timeout 80000 --workers 3 --worker-class uvicorn.workers.UvicornWorker --daemon
